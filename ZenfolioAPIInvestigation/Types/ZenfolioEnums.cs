@@ -1,5 +1,27 @@
 ﻿namespace ZenfolioAPIInvestigation.Types
 {
+    public enum ZenfolioPhotoRotation
+    {
+        None,
+        Rotate90,
+        Rotate180,
+        Rotate270,
+        Flip,
+        Rotate90Flip,
+        Rotate180Flip,
+        Rotate270Flip
+    }
+
+    public enum ZenfolioPhotoFlags
+    {
+        HasTitle,
+        HasCaption,
+        HasKeywords,
+        HasCategories,
+        HasExif,
+        HasComments
+    }
+
     public enum ZenfolioAccessType
     {
         Private,
