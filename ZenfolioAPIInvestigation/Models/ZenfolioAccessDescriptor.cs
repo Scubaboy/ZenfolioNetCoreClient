@@ -8,7 +8,7 @@
 
         public ZenfolioAccessType AccessType { get; set; }
 
-        public ZenfolioAccessMask AccessMask { get; set; }
+        public string AccessMask { get; set; }
 
         public string[] Viewers { get; set; }
 

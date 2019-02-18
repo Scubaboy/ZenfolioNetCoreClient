@@ -1,5 +1,10 @@
 ﻿namespace ZenfolioAPIInvestigation.Types
 {
+    public enum ZenfolioLevel
+    {
+        Full
+    }
+
     public enum ZenfolioPhotoRotation
     {
         None,
