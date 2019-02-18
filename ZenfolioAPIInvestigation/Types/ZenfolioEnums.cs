@@ -1,5 +1,10 @@
 ﻿namespace ZenfolioAPIInvestigation.Types
 {
+    public enum PhotoType
+    {
+        Gallery
+    }
+
     public enum ZenfolioLevel
     {
         Full

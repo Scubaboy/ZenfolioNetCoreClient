@@ -36,7 +36,7 @@
         public int PhotoCount { get; set; }
         public long[] ParentGroups { get; set; }
 
-        public ZenFolioGroupElement[] Elements { get; set; }
+        public PhotoSet[] Elements { get; set; }
 
     }
 }
