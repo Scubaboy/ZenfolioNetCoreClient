@@ -3,5 +3,7 @@
     public interface IApiConstants
     {
         string LoadGroupUri {get;}
+
+        string LoadPhotoSetUri { get; }
     }
 }

@@ -11,4 +11,10 @@
     <PackageReference Include="Microsoft.Extensions.Http" Version="2.2.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>System</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

@@ -1,7 +1,8 @@
 ﻿namespace ZenfolioAPIInvestigation.ResponseConverters
 {
-    public interface IResponseConverter
+    public interface IResponseConverter<T>
     {
-        T XMLTo<T>(string xmlResponse);
+        T XMLTo(string xmlResponse);
+        
     }
 }

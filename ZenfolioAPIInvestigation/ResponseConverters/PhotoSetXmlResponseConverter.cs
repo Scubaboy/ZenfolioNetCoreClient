@@ -2,19 +2,20 @@
 {
     using System.IO;
     using System.Xml.Serialization;
+    using ZenfolioAPIInvestigation.Models;
 
-    public class XmlResponseConverter : IResponseConverter
+    public class PhotoSetXmlResponseConverter : IResponseConverter<PhotoSet>
     {
-        public T XMLTo<T>(string xmlResponse)
+        public PhotoSet XMLTo(string xmlResponse)
         {
             XmlRootAttribute xRoot = new XmlRootAttribute();
-            xRoot.ElementName = "Group";
+            xRoot.ElementName = "PhotoSet";
             xRoot.Namespace = "http://www.zenfolio.com/api/1.8";
             xRoot.IsNullable = true;
-            var serializer = new XmlSerializer(typeof(T), xRoot);
+            var serializer = new XmlSerializer(typeof(PhotoSet), xRoot);
             using (var reader = new StringReader(xmlResponse))
             {
-                return (T)serializer.Deserialize(reader);
+                return (PhotoSet)serializer.Deserialize(reader);
             }
         }
     }

@@ -1,5 +1,11 @@
 ﻿namespace ZenfolioAPIInvestigation.Types
 {
+    public enum ZenfolioResponseConverter
+    {
+        GroupXML,
+        PhotoSetXML
+    }
+
     public enum PhotoType
     {
         Gallery

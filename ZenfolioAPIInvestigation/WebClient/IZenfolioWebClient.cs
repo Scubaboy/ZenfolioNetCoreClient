@@ -8,6 +8,8 @@
     {
         void Authenticate();
 
-        Task<Group> LoadGroup(string groupId, ZenfolioLevel level, bool includeChildren);
+        Task<Group> LoadGroupAsync(string groupId, ZenfolioLevel level, bool includeChildren);
+
+        Task<PhotoSet> LoadPhotoSetAsync(string photoSetId, ZenfolioLevel level, bool includeChildren);
     }
 }
